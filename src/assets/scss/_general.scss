@@ -2,3 +2,20 @@ $periago-orange: #e8913f;
 $periago-turqoise: #2f7e80;
 $periago-lime: #aacd48;
 $periago-pink: #e63e8c;
+
+.centered-grid-x {
+  @include xy-grid(horizontal, true);
+  @include xy-gutters(.5em, margin, right left, false)
+  justify-content: center;
+}
+
+.alignLeft-grid-x {
+  @include xy-grid(horizontal, true);
+  @include xy-gutters(.5em, margin, right left, false)
+  justify-content: left;
+}
+.jusified-grid-x {
+  @include xy-grid(horizontal, true);
+  @include xy-gutters(.5em, margin, right left, false)
+  justify-content: space-around;
+}

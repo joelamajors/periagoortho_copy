@@ -1,0 +1,39 @@
+.periago-menu {
+  @include menu-base;
+  @include xy-cell(auto);
+  justify-content: space-around;
+
+  @include breakpoint(small) {
+    @include menu-direction(vertical);
+  }
+  @include breakpoint(medium) {
+    @include menu-direction(horizontal);
+  }
+}
+
+.title-bar {
+  background-color: transparent;
+  border-radius: 0 0 2em 2em;
+
+  li {
+    font-size: 1.3em;
+  }
+}
+
+.top-bar {
+  background-color: transparent;
+  padding-bottom: 10px;
+
+  ul {
+    background-color: transparent;
+  }
+
+  li {
+    font-size: 1.3em;
+  }
+
+  input {
+    margin-right: 1rem;
+    width: 200px;
+  }
+}

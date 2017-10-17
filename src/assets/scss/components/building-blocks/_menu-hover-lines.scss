@@ -1,0 +1,54 @@
+$menu-hover-lines-transition: all .35s ease;
+$menu-hover-lines-border-width: 3px;
+
+.menu-hover-lines {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: $menu-hover-lines-transition;
+
+  li a {
+    color: rgba($body-font-color, 0.5);
+    margin-left: 1rem;
+    padding: .75rem 0;
+    position: relative;
+  }
+
+  li.active > a {
+    background-color: transparent;
+  }
+
+  a:before,
+  a::after {
+    background-color: $primary-color;
+    content: '';
+    height: $menu-hover-lines-border-width;
+    position: absolute;
+    transition: $menu-hover-lines-transition;
+    width: 0;
+  }
+
+  a::before {
+    left: 0;
+    top: 0;
+  }
+
+  a::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  a:hover,
+  li.active > a {
+    color: $body-font-color;
+    transition: $menu-hover-lines-transition;
+  }
+
+  a:hover::before,
+  .active a::before,
+  a:hover::after,
+  .active a::after {
+    width: 100%;
+  }
+}
