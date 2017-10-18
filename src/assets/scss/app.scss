@@ -7,7 +7,6 @@
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid;
-//
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
@@ -54,5 +53,3 @@
 
 @import 'general';
 @import 'menu';
-
-@import 'components/building-blocks/menu-hover-lines';

@@ -3,19 +3,24 @@ $periago-turqoise: #2f7e80;
 $periago-lime: #aacd48;
 $periago-pink: #e63e8c;
 
-.centered-grid-x {
+.grid-x-center {
   @include xy-grid(horizontal, true);
-  @include xy-gutters(.5em, margin, right left, false)
+  @include xy-gutters(.5em, margin, right left, false);
   justify-content: center;
 }
 
-.alignLeft-grid-x {
+.grid-x-left {
   @include xy-grid(horizontal, true);
-  @include xy-gutters(.5em, margin, right left, false)
+  @include xy-gutters(.5em, margin, right left, false);
   justify-content: left;
 }
-.jusified-grid-x {
+
+.grid-x-space {
   @include xy-grid(horizontal, true);
-  @include xy-gutters(.5em, margin, right left, false)
+  @include xy-gutters(.5em, margin, right left, false);
   justify-content: space-around;
+}
+
+.periago-header {
+  justify-content: center;
 }

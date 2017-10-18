@@ -21,7 +21,8 @@ $menu-hover-lines-border-width: 3px;
 
   a:before,
   a::after {
-    background-color: $primary-color;
+    background-color: $periago-orange;
+    // background-color: $primary-color;
     content: '';
     height: $menu-hover-lines-border-width;
     position: absolute;
