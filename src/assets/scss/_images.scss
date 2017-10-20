@@ -1,3 +1,8 @@
-.periago-logo {
-  box-shadow: 10px $black;
+.periago-logo {  
+  margin-bottom: 2em;
+  max-height: 10em;
+
+  @include breakpoint(medium) {
+    margin-top: 1em;
+  }
 }

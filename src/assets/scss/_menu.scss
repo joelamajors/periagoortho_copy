@@ -1,11 +1,18 @@
 $menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
 
+.periago-bar {
+  background-color: $periago-orange;
+  padding-bottom: 1em;
+  button {
+    opacity: .5;
+  }
+}
+
 .periago-menu {
   @include menu-base;
   @include xy-cell(auto);
 
-// menu-hover-lines
   font-weight: 500;
   justify-content: space-around;
   letter-spacing: 1px;
@@ -23,8 +30,8 @@ $menu-hover-lines-border-width: 3px;
 
   li a {
     color: rgba($body-font-color, .5);
-    margin-left: 1rem;
-    padding: .75rem 0;
+    // margin-left: 1rem;
+    // padding: .75rem 0;
     position: relative;
   }
 
@@ -34,9 +41,9 @@ $menu-hover-lines-border-width: 3px;
 
   a:before,
   a::after {
-    background-color: $periago-orange;
+    background-color: $periago-turqoise;
     // background-color: $primary-color;
-    content: '';
+    // content: '';
     height: $menu-hover-lines-border-width;
     position: absolute;
     transition: $menu-hover-lines-transition;
@@ -71,7 +78,7 @@ $menu-hover-lines-border-width: 3px;
   background-color: transparent;
   border-radius: 0 0 2em 2em;
   margin-bottom: 1em;
-  margin-top: .2em;
+  padding-top: 1em;
 
   li {
     font-size: 1.3em;
@@ -81,7 +88,7 @@ $menu-hover-lines-border-width: 3px;
 .top-bar {
   background-color: transparent;
   margin-bottom: 1em;
-  margin-top: .2em;
+  padding-top: .2em;
 
   ul {
     background-color: transparent;
