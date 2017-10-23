@@ -1,0 +1,28 @@
+.team-callout {
+  background-color: $periago-orange;
+  border: .1em solid $black;
+}
+
+.team-cards {
+  @include card-container();
+
+  z-index: 0;
+}
+
+.team-headshots {
+  @include xy-cell(50%);
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba($black, .3);
+  }
+}
+
+.team-titles {
+  @include xy-cell(50%);
+}
+
+.team-blurbs {
+  @include xy-cell(auto);
+}
+
