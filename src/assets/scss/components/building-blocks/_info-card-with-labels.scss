@@ -1,8 +1,8 @@
-$card-team-profile-bg: $card-background;
-$card-team-profile-text-color: $body-font-color;
+$card-user-profile-bg: $card-background;
+$card-user-profile-text-color: $body-font-color;
 
-.card-team-profile {
-  @include card-container($card-team-profile-bg, $card-team-profile-text-color, 1rem, $global-radius);
+.card-user-profile {
+  @include card-container($card-user-profile-bg, $card-user-profile-text-color, 1rem, $global-radius);
   position: relative;
   z-index: 0;
 
@@ -12,27 +12,27 @@ $card-team-profile-text-color: $body-font-color;
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(6, true, 1em, margin, right left, false);
-    max-width: 50%;
+    @include xy-cell(6, true, 3em, margin, right left, false);
+    max-width: 40%;
   }
 
   @include breakpoint (large) {
     @include xy-cell(4, true, 1.5em, margin, right left, false);
-    max-width: 33.3%;
+    max-width: 33%;
   }
 
   &:hover {
-    .card-team-profile-img {
+    .card-user-profile-img {
       opacity: 1;
     }
   }
 }
 
-.card-team-profile-content {
+.card-user-profile-content {
   position: relative;
 
   &::before {
-    border-color: transparent transparent transparent $card-team-profile-bg;
+    border-color: transparent transparent transparent $card-user-profile-bg;
     border-style: solid;
     border-width: rem-calc(55) 0 0 rem-calc(500);
     content: '';
@@ -45,13 +45,13 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
-.card-team-profile-actions {
+.card-user-profile-actions {
   @include card-divider;
-  background: $card-team-profile-bg;
+  background: $card-user-profile-bg;
   display: flex;
 }
 
-.card-team-profile-img {
+.card-user-profile-img {
   background-color: $periago-orange;
   max-width: 100%;
   // opacity: .85;
@@ -59,7 +59,7 @@ $card-team-profile-text-color: $body-font-color;
   transition: all .25s ease;
 }
 
-.card-team-profile-blank {
+.card-user-profile-blank {
   background-color: $periago-orange;
   height: 7em;
   max-width: 100%;
@@ -68,7 +68,7 @@ $card-team-profile-text-color: $body-font-color;
   transition: all .25s ease;
 }
 
-.card-team-profile-avatar {
+.card-user-profile-avatar {
   bottom: 100%;
   left: 1rem;
   max-width: rem-calc(90);
@@ -81,37 +81,24 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
-.card-team-profile-name {
+.card-user-profile-name {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0;
 }
 
-.card-team-profile-button {
+.card-user-profile-button {
   flex: 1 0 0;
   margin-bottom: 0;
 
-  + .card-team-profile-button {
+  + .card-user-profile-button {
     margin-left: 1rem;
   }
 }
 
-.card-team-profile-info {
+.card-user-profile-info {
   font-size: .875rem;
   letter-spacing: 1px;
   opacity: .8;
 }
 
-.team-callout {
-  background-color: $periago-orange;
-  border: .1em solid rgba($black, .5);
-  margin-bottom: 1em;
-  margin-top: 1em;
-
-  h3 {
-    color: $white;
-    font-size: 2em;
-    padding-bottom: .3em;
-    padding-top: .3em;
-  }
-}
