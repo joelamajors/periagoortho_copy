@@ -27,4 +27,10 @@ $periago-pink: #e63e8c;
 
 .periago-banner {
   background-color: $periago-orange;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+
+  h3 {
+    opacity: .6;
+  }
 }
