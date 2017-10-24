@@ -1,11 +1,44 @@
 $menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
+$periago-banner-hr-width: 13em;
+
+.periago-banner {
+  background-color: $periago-orange;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+
+  hr {
+    border-top: .3em solid $periago-lime;
+
+    @include breakpoint (small) {
+      width: $periago-banner-hr-width;
+    }
+
+    @include breakpoint (medium) {
+      width: $periago-banner-hr-width * 2.5;
+    }
+  }
+}
 
 .periago-bar {
   background-color: $periago-orange;
   padding-bottom: 1em;
+
   button {
     opacity: .5;
+  }
+}
+
+.periago-subtitle {
+  opacity: .6;
+}
+
+.periago-logo {
+  margin-bottom: 1em;
+  max-height: 10em;
+
+  @include breakpoint(medium) {
+    padding-top: 1em;
   }
 }
 
@@ -30,8 +63,6 @@ $menu-hover-lines-border-width: 3px;
 
   li a {
     color: rgba($body-font-color, .5);
-    // margin-left: 1rem;
-    // padding: .75rem 0;
     position: relative;
   }
 
@@ -41,9 +72,8 @@ $menu-hover-lines-border-width: 3px;
 
   a:before,
   a::after {
-    background-color: $periago-turqoise;
-    // background-color: $primary-color;
-    // content: '';
+    background-color: $periago-lime;
+    content: '';
     height: $menu-hover-lines-border-width;
     position: absolute;
     transition: $menu-hover-lines-transition;

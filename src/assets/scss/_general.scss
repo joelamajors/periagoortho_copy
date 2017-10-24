@@ -24,19 +24,3 @@ $periago-pink: #e63e8c;
 .periago-header {
   justify-content: center;
 }
-
-.periago-banner {
-  background-color: $periago-orange;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-
-  h3 {
-    border-top: .3em solid $periago-lime;
-    opacity: .6;
-    padding-top: .5em;
-  }
-}
-
-.article-callout {
-  border: .2em solid $periago-pink;
-}
