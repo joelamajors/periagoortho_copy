@@ -27,6 +27,11 @@ $periago-pink: #e63e8c;
   justify-content: space-around;
 }
 
+.grid-y-center {
+  @include xy-grid(vertical, true);
+  justify-content: center;
+}
+
 .periago-header {
   justify-content: center;
 }

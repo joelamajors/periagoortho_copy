@@ -3,8 +3,10 @@ $menu-hover-lines-border-width: 3px;
 $periago-banner-hr-width: 13em;
 
 .periago-banner {
+  @include xy-grid(vertical, true);
   background-color: $periago-orange;
   height: 80vh;
+  justify-content: center;
   margin-bottom: 1em;
   padding-bottom: 1em;
 
@@ -14,6 +16,7 @@ $periago-banner-hr-width: 13em;
     @include breakpoint (small) {
       width: $periago-banner-hr-width;
     }
+
     @include breakpoint (medium) {
       width: $periago-banner-hr-width * 2.5;
     }
@@ -50,6 +53,7 @@ $periago-banner-hr-width: 13em;
   font-weight: 500;
   justify-content: space-around;
   letter-spacing: 1px;
+  max-width: 1000px;
   text-align: center;
   text-transform: uppercase;
   transition: $menu-hover-lines-transition;
