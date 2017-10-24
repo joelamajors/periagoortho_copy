@@ -15,6 +15,12 @@ $periago-pink: #e63e8c;
   justify-content: left;
 }
 
+.grid-x-right {
+  @include xy-grid(horizontal, true);
+  @include xy-gutters(.5em, margin, right left, false);
+  justify-content: right;
+}
+
 .grid-x-space {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
