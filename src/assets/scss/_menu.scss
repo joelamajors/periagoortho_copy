@@ -8,12 +8,11 @@ $periago-banner-hr-width: 13em;
   padding-bottom: 1em;
 
   hr {
-    border-top: .3em solid $periago-lime;
+    border-bottom: .3em solid $periago-lime;
 
     @include breakpoint (small) {
       width: $periago-banner-hr-width;
     }
-
     @include breakpoint (medium) {
       width: $periago-banner-hr-width * 2.5;
     }
@@ -22,6 +21,7 @@ $periago-banner-hr-width: 13em;
 
 .periago-bar {
   background-color: $periago-orange;
+  border-bottom: 1em solid $periago-turqoise;
   padding-bottom: 1em;
 
   button {
