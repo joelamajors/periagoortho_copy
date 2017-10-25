@@ -5,7 +5,6 @@ $periago-banner-hr-width: 13em;
 .periago-banner {
   @include xy-grid(vertical, true);
   background-color: $periago-orange;
-  height: 80vh;
   justify-content: center;
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -23,6 +22,13 @@ $periago-banner-hr-width: 13em;
   }
 }
 
+.periago-banner-index {
+  @extend .periago-banner;
+
+  height: 80vh;
+  max-height: 1000px;
+}
+
 .periago-bar {
   background-color: $periago-orange;
   border-bottom: 1em solid $periago-turqoise;
@@ -32,6 +38,12 @@ $periago-banner-hr-width: 13em;
     opacity: .5;
   }
 }
+
+// .periago-bar-index {
+//   @extend .periago-bar;
+//   height: 80vh;
+//   max-height: 1000px;
+// }
 
 .periago-subtitle {
   opacity: .6;
