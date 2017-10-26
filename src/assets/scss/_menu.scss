@@ -1,6 +1,8 @@
 $menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
 $periago-banner-hr-width: 13em;
+$button-pink: ;
+$button-pink-hover: ;
 
 .periago-banner {
   @include xy-grid(vertical, true);
@@ -34,16 +36,10 @@ $periago-banner-hr-width: 13em;
   border-bottom: 1em solid $periago-turqoise;
   padding-bottom: 1em;
 
-  button {
+  .menu-icon {
     opacity: .5;
   }
 }
-
-// .periago-bar-index {
-//   @extend .periago-bar;
-//   height: 80vh;
-//   max-height: 1000px;
-// }
 
 .periago-subtitle {
   opacity: .6;
@@ -119,6 +115,11 @@ $periago-banner-hr-width: 13em;
   .active a::after {
     width: 100%;
   }
+}
+
+.spanish-button {
+  @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
+  // justify-content: right;
 }
 
 .title-bar {

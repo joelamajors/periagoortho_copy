@@ -12,13 +12,13 @@ $periago-pink: #e63e8c;
 .grid-x-left {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .grid-x-right {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .grid-x-space {
