@@ -1,0 +1,100 @@
+// $location-card-bg: $periago-turqoise;
+// $location-card-text-color: $black;
+// $location-card-radius: 2px;
+
+.location-card-container {
+  @include xy-grid(horizontal, true);
+  justify-content: center;
+}
+
+.location-cards {
+  @include card-container($periago-orange, $white, 1em, 1px solid rgba($black, .3), 3px, 0 10px 20px rgba($dark-gray, .5));
+  justify-content: space-around;
+
+  @include xy-grid(horizontal, true);
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+  
+  @include breakpoint (medium) {
+    @include xy-cell(12, true, 15em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  // @include breakpoint (large) {
+  //   @include xy-cell(4, true, 1.5em, margin, right left, false);
+  //   max-width: 33.3%;
+  // }
+}
+
+.location-cards-offices {
+  @include xy-cell(12, true, 1em, margin, right left, false);
+  text-align: center;
+  width: 100%;
+}
+
+.location-card-title {
+  @include xy-cell(12, true, 1em, margin, right left, false);
+  text-align: center;
+  width: 100%;
+}
+
+// .location-card-subtitle {
+
+// }
+
+.location-card-address {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 1em, margin, right left, false);
+    max-width: 50%;
+  }
+
+  // @include breakpoint (large) {
+  //   @include xy-cell(4, true, 1.5em, margin, right left, false);
+  //   max-width: 33.3%;
+  // }
+}
+
+.location-card-hours {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(4, true, 1em, margin, right left, false);
+    max-width: 50%;
+  }
+
+  // @include breakpoint (large) {
+  //   @include xy-cell(4, true, 1.5em, margin, right left, false);
+  //   max-width: 33.3%;
+  // }
+}
+
+.location-card-map-section {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 0, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 1em, margin, right left, false);
+    max-width: 50%;
+  }
+
+  // @include breakpoint (large) {
+  //   @include xy-cell(4, true, 0, margin, right left, false);
+  //   max-width: 33.3%;
+  // }
+
+  h4 {
+    padding-left: .5em;
+  }
+}
