@@ -119,7 +119,6 @@ $button-pink-hover: ;
 
 .spanish-button {
   @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
-  // justify-content: right;
 }
 
 .title-bar {
