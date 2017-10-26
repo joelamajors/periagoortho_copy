@@ -142,7 +142,19 @@ $button-pink-hover: ;
   }
 
   li {
-    font-size: 1.3em;
+    @include breakpoint (medium) {
+      font-size: 1em;
+    }
+    @include breakpoint (large) {
+      font-size: 1.2em;
+    }
+    @include breakpoint (xlarge) {
+      font-size: 1.3em;
+    }
+    @include breakpoint (xxlarge) {
+      font-size: 1.6em;
+    }
+    
   }
 
   input {
