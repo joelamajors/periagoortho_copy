@@ -45,6 +45,11 @@ $button-pink-hover: ;
   opacity: .6;
 }
 
+.schedule-appointment {
+  @include button(false, rgba($black, .5), $black, $white, hollow);
+  font-weight: bold;
+}
+
 .periago-logo {
   margin-bottom: 1em;
   max-height: 10em;
@@ -154,7 +159,6 @@ $button-pink-hover: ;
     @include breakpoint (xxlarge) {
       font-size: 1.6em;
     }
-    
   }
 
   input {

@@ -1,0 +1,10 @@
+.top-button {
+  @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
+}
+
+footer {
+  background-color: $periago-orange;
+  border-bottom: thick solid $periago-turqoise;
+  margin-top: 2em;
+  padding-top: 2em;
+}
