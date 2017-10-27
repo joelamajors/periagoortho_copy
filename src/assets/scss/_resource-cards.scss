@@ -1,10 +1,13 @@
 .resource-card-grid {
   @include xy-grid(horizontal, true);
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 1em;
 }
 
 .resource-cards {
+  @include card-container($white, $black, 2em, 0, 1px, 0 10px 20px rgba($dark-gray, .5));
+  // 1px solid rgba($black, .3)
+
   @include breakpoint (small) {
     @include xy-cell(12, true, 1em, margin, right left, false);
     max-width: 100%;
@@ -19,9 +22,28 @@
   //   @include xy-cell(3, true, 1.5em, margin, right left, false);
   //   max-width: 25%;
   // }
+
+  a:hover {
+    color: $white;
+    text-decoration: underline;
+  }
 }
 
 .resource-card-title {
+  background-color: $periago-orange;
+  color: $white;
+  padding-top: .2em;
   text-align: center;
+  text-transform: uppercase;
 }
 
+.resource-card-section {
+  background-color: rgba($white, .99);
+  color: $black;
+  padding: .5em;
+  
+
+  img {
+
+  }
+}

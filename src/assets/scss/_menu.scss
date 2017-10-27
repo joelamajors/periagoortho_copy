@@ -6,10 +6,10 @@ $button-pink-hover: ;
 
 .periago-banner {
   @include xy-grid(vertical, true);
-  background-color: $periago-orange;
+  // background-color: $periago-orange;
   justify-content: center;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
+  // margin-bottom: 1em;
+  // padding-bottom: 1em;
 
   hr {
     border-bottom: .3em solid $periago-lime;
@@ -32,10 +32,16 @@ $button-pink-hover: ;
 }
 
 .periago-bar {
+  background-image: url('../../../../assets/img/periago-hero-bg.png');
+  // background-attachment: fixed;
   background-color: $periago-orange;
+  background-position: 50% 3em;
+  // background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 120%;
   border-bottom: thick solid $periago-turqoise;
   border-top: .2em solid $periago-lime;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
 
   .menu-icon {
     opacity: .5;
@@ -43,20 +49,26 @@ $button-pink-hover: ;
 }
 
 .periago-subtitle {
+  color: $white;
   opacity: .6;
+  margin-bottom: .5em;
 }
 
 .schedule-appointment {
-  @include button(false, rgba($black, .5), $black, $white, hollow);
+  @include button(false, rgba($white, .5), $white, $black, solid);
   font-weight: bold;
 }
 
 .periago-logo {
   margin-bottom: 1em;
+  // margin-top: 2em;
   max-height: 10em;
 
   @include breakpoint(medium) {
     padding-top: 1em;
+  }
+  @include breakpoint(large) {
+    margin-top: 2em;
   }
 }
 
@@ -128,10 +140,7 @@ $button-pink-hover: ;
 }
 
 .title-bar {
-  background-color: transparent;
-  border-radius: 0 0 2em 2em;
-  margin-bottom: 1em;
-  padding-top: 1em;
+  background-color: $periago-orange;
 
   li {
     font-size: 1.3em;
@@ -139,12 +148,13 @@ $button-pink-hover: ;
 }
 
 .top-bar {
-  background-color: transparent;
+  background-color: $periago-orange;
   margin-bottom: 1em;
   padding-top: .2em;
+  // padding: .2em 1em 0;
 
   ul {
-    background-color: transparent;
+    background-color: $periago-orange;
   }
 
   li {
