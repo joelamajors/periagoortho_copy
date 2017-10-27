@@ -33,7 +33,8 @@ $button-pink-hover: ;
 
 .periago-bar {
   background-color: $periago-orange;
-  border-bottom: 1em solid $periago-turqoise;
+  border-bottom: thick solid $periago-turqoise;
+  border-top: .2em solid $periago-lime;
   padding-bottom: 1em;
 
   .menu-icon {

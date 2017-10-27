@@ -1,3 +1,27 @@
-.resource-cards {
-  
+.resource-card-grid {
+  @include xy-grid(horizontal, true);
+  justify-content: center;
+  margin-top: 1em;
 }
+
+.resource-cards {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 1.5em, margin, right left, false);
+    max-width: 50%;
+  }
+
+  // @include breakpoint (large) {
+  //   @include xy-cell(3, true, 1.5em, margin, right left, false);
+  //   max-width: 25%;
+  // }
+}
+
+.resource-card-title {
+  text-align: center;
+}
+
