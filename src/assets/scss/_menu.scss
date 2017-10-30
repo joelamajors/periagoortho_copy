@@ -6,10 +6,7 @@ $button-pink-hover: ;
 
 .periago-banner {
   @include xy-grid(vertical, true);
-  // background-color: $periago-orange;
   justify-content: center;
-  // margin-bottom: 1em;
-  // padding-bottom: 1em;
 
   hr {
     border-bottom: .3em solid $periago-lime;
@@ -27,18 +24,28 @@ $button-pink-hover: ;
 .periago-banner-index {
   @extend .periago-banner;
 
-  height: 80vh;
   max-height: 1000px;
+
+  @include breakpoint (small) {
+    height: 70vh;
+  }
+
+  @include breakpoint (medium) {
+    height: 80vh;
+  }
+
+  @include breakpoint (large) {
+    height: 80vh;
+  }
+  
 }
 
 .periago-bar {
-  background-image: url('../../../../assets/img/periago-hero-bg.png');
+  // background-image: url('../../../../assets/img/periago-hero-bg.png');
+  background-image: url('../../../../assets/img/periago-hero-bg-borders.png');
   // background-attachment: fixed;
   background-color: $periago-orange;
-  background-position: 50% 3em;
-  // background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto 120%;
+  background-repeat: repeat-x;
   border-bottom: thick solid $periago-turqoise;
   border-top: .2em solid $periago-lime;
   margin-bottom: 1em;
@@ -46,11 +53,25 @@ $button-pink-hover: ;
   .menu-icon {
     opacity: .5;
   }
+
+  @include breakpoint (small) {
+    background-position: 50% -3.5em;
+    background-size: auto 120%;
+  }
+
+  @include breakpoint (medium) {
+    background-position: 50% auto;
+    background-size: auto 100%;
+  }
+
+  @include breakpoint (large) {
+    background-position: 50% 2em;
+    background-size: auto 100%;
+  }
 }
 
 .periago-subtitle {
   color: $white;
-  opacity: .6;
   margin-bottom: .5em;
 }
 
