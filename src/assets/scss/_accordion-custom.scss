@@ -1,7 +1,14 @@
 .accordion-title {
 
   &:hover {
-    background-color: $periago-turqoise;
     color: $white;
+  }
+}
+
+.tabs-title.is-active {
+  outline: none;
+
+  > a:focus {
+    outline: none;
   }
 }
