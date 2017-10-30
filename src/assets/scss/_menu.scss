@@ -83,16 +83,19 @@ $periago-banner-hr-width: 13em;
 }
 
 .periago-logo {
-  margin-bottom: 1em;
-  margin-top: 2em;
-  max-height: 10em;
-
-  @include breakpoint(medium) {
-    padding-top: 1em;
-  }
-
-  @include breakpoint(large) {
+  @include xy-cell(auto);
+  img {
+    margin-bottom: 1em;
     margin-top: 2em;
+    max-height: 10em;
+
+    @include breakpoint(medium) {
+      padding-top: 1em;
+    }
+
+    @include breakpoint(large) {
+      margin-top: 2em;
+    }
   }
 }
 
@@ -160,13 +163,20 @@ $periago-banner-hr-width: 13em;
 }
 
 .periago-subtitle {
+  @include xy-cell(100%);
+
   color: $white;
+  text-align: center;
   margin-bottom: .5em;
 }
 
 .schedule-appointment {
-  @include button(false, rgba($white, .5), $white, $black, solid);
-  font-weight: bold;
+  justify-content: center;
+
+  a {
+    @include button(false, rgba($white, .5), $white, $black, solid);
+    font-weight: bold;
+  }
 }
 
 .spanish-button {
