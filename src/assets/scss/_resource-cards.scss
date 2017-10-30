@@ -6,7 +6,8 @@
 
 .resource-cards {
   @include card-container($white, $black, 2em, 0, 1px, 0 10px 20px rgba($dark-gray, .5));
-  // 1px solid rgba($black, .3)
+  border: 1px solid $dark-gray;
+  text-align: center;
 
   @include breakpoint (small) {
     @include xy-cell(12, true, 1em, margin, right left, false);
@@ -18,12 +19,7 @@
     max-width: 50%;
   }
 
-  // @include breakpoint (large) {
-  //   @include xy-cell(3, true, 1.5em, margin, right left, false);
-  //   max-width: 25%;
-  // }
-
-  a:hover {
+  &:hover {
     color: $white;
     text-decoration: underline;
   }
@@ -34,16 +30,38 @@
   color: $white;
   padding-top: .2em;
   text-align: center;
-  text-transform: uppercase;
+
+  &:hover {
+    color: rgba($white, .8);
+  }
+}
+
+.resource-card-image {
+  img {
+    margin: 1em;
+    max-height: 14em;
+  }
 }
 
 .resource-card-section {
   background-color: rgba($white, .99);
   color: $black;
+  min-height: 5.5em;
   padding: .5em;
-  
 
-  img {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+}
 
+.resource-card-link {
+  background-color: $light-gray;
+  color: $periago-turqoise;
+  padding: .5em 0;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 0, margin, right left, false);
+    max-width: 100%;
   }
 }
