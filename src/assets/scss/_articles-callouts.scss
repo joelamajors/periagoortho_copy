@@ -1,3 +1,69 @@
+$article-titles-font-size: 2em;
+
 .article-callout {
   border: .2em solid $periago-pink;
 }
+
+.article-contents {
+  padding: .5em;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(10, true, 1.5em, margin, right left, false);
+    max-width: 84%;
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(8, true, 1.5em, margin, right left, false);
+    max-width: 66%;
+  }
+
+  h4 {
+    @include xy-cell(12, true, 0, margin, right left, false);
+    font-size: $article-titles-font-size * .5;
+    font-weight: bold;
+    max-width: 100%;
+  }
+}
+
+.article-headers {
+  @include xy-grid(horizontal, true);
+  @include xy-gutters(.5em, margin, right left, false);
+  justify-content: center;
+}
+
+.article-titles {
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: $article-titles-font-size;
+  }
+
+  h3 {
+    font-size: $article-titles-font-size * .75;
+  }
+
+  h4 {
+    font-size: $article-titles-font-size * .5;
+  }
+}
+
+.article-title-image {
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+}
+
+
