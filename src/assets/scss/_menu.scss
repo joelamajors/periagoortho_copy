@@ -61,7 +61,6 @@ $periago-banner-hr-width: 13em;
   }
 
   .menu-icon {
-    // line-height: 1.5em;
     margin-bottom: .25em;
     margin-top: .25em;
     opacity: .5;
@@ -75,7 +74,7 @@ $periago-banner-hr-width: 13em;
 
     @include breakpoint (medium) {
       background-position: 50% auto;
-      background-size: auto 100%;
+      background-size: auto 120%;
     }
 
     @include breakpoint (large) {
@@ -197,6 +196,8 @@ $periago-banner-hr-width: 13em;
 .top-bar {
   background-color: $periago-orange;
   margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: .2em;
 
   ul {
