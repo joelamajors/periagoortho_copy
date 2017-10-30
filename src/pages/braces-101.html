@@ -1,10 +1,61 @@
 <div class="grid-container">
 
-  {{> life-with-braces }}
-  {{> types-of-braces }}
-  {{> types-of-appliances }}
-  {{> oral-care }}
-  {{> retainers }}
-  {{> emergency-care }}
+  <div class="accordion" data-accordion data-allow-all-closed="true">
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Life with Braces
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> life-with-braces }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Types of Braces
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> types-of-braces }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Types of Appliances
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> types-of-appliances }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Oral Care
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> oral-care }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Retainers
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> retainers }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">
+        Emergency Care
+      </a>
+      <div class="accordion-content" data-tab-content>
+        {{> emergency-care }}
+      </div>
+    </div>
+
+  </div>
 
 </div>

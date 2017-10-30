@@ -1,8 +1,3 @@
-$periago-orange: #e8913f;
-$periago-turqoise: #2f7e80;
-$periago-lime: #aacd48;
-$periago-pink: #e63e8c;
-
 .grid-x-center {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);

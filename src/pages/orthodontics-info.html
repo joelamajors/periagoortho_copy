@@ -1,9 +1,50 @@
 <div class="grid-container">
-  {{> why-braces }}
-  {{> braces-for-children }}
-  {{> two-phase-treatment }}
-  {{> braces-for-adults }}
-  {{> surgical-orthodontics }}
-  {{> ask-the-orthodontist }}
-  {{> outside-resources }}
+
+  <div class="grid-container">
+
+  <div class="accordion" data-accordion data-allow-all-closed="true">
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Why Braces</a>
+      <div class="accordion-content" data-tab-content>
+        {{> why-braces }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Two-Phase Treatment</a>
+      <div class="accordion-content" data-tab-content>
+        {{> two-phase-treatment }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Braces for Adults</a>
+      <div class="accordion-content" data-tab-content>
+        {{> braces-for-adults }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Surgical Orthodontics</a>        
+      <div class="accordion-content" data-tab-content>
+        {{> surgical-orthodontics }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Ask the Orthodontist</a>
+      <div class="accordion-content" data-tab-content>
+        {{> ask-the-orthodontist }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Outside Resources</a>
+      <div class="accordion-content" data-tab-content>
+        {{> outside-resources }}
+      </div>
+    </div>
+
+  </div>
 </div>
