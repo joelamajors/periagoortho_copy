@@ -17,11 +17,6 @@ $article-titles-font-size: 2em;
     max-width: 84%;
   }
 
-  // @include breakpoint (large) {
-  //   @include xy-cell(8, true, 1.5em, margin, right left, false);
-  //   max-width: 66%;
-  // }
-
   h4 {
     @include xy-cell(12, true, 0, margin, right left, false);
     font-size: $article-titles-font-size * .5;
@@ -121,4 +116,17 @@ $article-titles-font-size: 2em;
 .outside-resources-links {
   @include xy-cell(12, true, 1em, margin, right left, false);
   max-width: 100%;
+}
+
+.two-phase-image {
+  background-color: $periago-orange;
+  border: 3px solid $white;
+  box-shadow: 0 5px 10px 0 rgba($black, .3);
+  margin-bottom: 1em;
+  text-transform: uppercase;
+
+  p {
+    color: $white;
+    margin-top: 1em;
+  }
 }
