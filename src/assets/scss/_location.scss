@@ -14,8 +14,10 @@
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(12, true, 15em, margin, right left, false);
+    @include xy-cell(12, true, 5em, margin, right left, false);
     max-width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
