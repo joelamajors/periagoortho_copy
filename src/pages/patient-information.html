@@ -1,5 +1,27 @@
 <div class="grid-container">
-  {{> patient-forms }}
-  {{> financial-information }}
-  {{> office-visits }}
+  <div class="accordion" data-responsive-accordion-tabs="accordion medium-tabs" data-allow-all-closed="true">
+  
+    <div class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Patient Forms</a>
+      <div class="accordion-content" data-tab-content>
+        {{> patient-forms }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Financial Information</a>
+      <div class="accordion-content" data-tab-content>
+        {{> financial-information }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Office Visits</a>
+      <div class="accordion-content" data-tab-content>
+        {{> office-visits }}
+      </div>
+    </div>
+
+  </div>
 </div>
+
