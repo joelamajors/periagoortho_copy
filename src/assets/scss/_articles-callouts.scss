@@ -41,7 +41,7 @@ $article-titles-font-size: 2em;
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(4, true, 1.5em, margin, right left, false);
+    @include xy-cell(3, true, 1.5em, margin, right left, false);
     max-width: 25%;
   }
 }
@@ -53,8 +53,12 @@ $article-titles-font-size: 2em;
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(8, true, 1.5em, margin, right left, false);
+    @include xy-cell(9, true, 1.5em, margin, right left, false);
     max-width: 75%;
+  }
+
+  h4 {
+    text-decoration: underline;
   }
 }
 
@@ -92,4 +96,23 @@ $article-titles-font-size: 2em;
     @include xy-cell(12, true, 1em, margin, right left, false);
     max-width: 100%;
   }
+}
+
+.article-outside-resources {
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(11, true, 1em, margin, right left, false);
+    max-width: 91%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(3, true, 1.5em, margin, right left, false);
+    max-width: 25%;
+  }
+}
+
+.outside-resources-links {
+  @include xy-cell(12, true, 1em, margin, right left, false);
+  max-width: 100%;
 }
