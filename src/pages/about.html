@@ -4,10 +4,41 @@
     <h2>About Us</h2>
   </div>
 
-  {{> meet-dr-periago }}
-  {{> meet-the-team }}
-  {{> our-philosophy }}
-  {{> what-sets-us-apart }}
-  {{> rewards-events }}
+  <div class="accordion" data-responsive-accordion-tabs="accordion medium-tabs" data-allow-all-closed="true">
 
+    <div class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Meet Dr. Periago</a>
+      <div class="accordion-content" data-tab-content>
+        {{> meet-dr-periago }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Meet the Team</a>
+      <div class="accordion-content" data-tab-content>
+        {{> meet-the-team }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Our Philosophy</a>
+      <div class="accordion-content" data-tab-content>
+        {{> our-philosophy }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">What Sets Us Apart</a>
+      <div class="accordion-content" data-tab-content>
+        {{> what-sets-us-apart }}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Rewards & Events</a>
+      <div class="accordion-content" data-tab-content>
+        {{> rewards-events }}
+      </div>
+    </div>
+  </div>
 </div>

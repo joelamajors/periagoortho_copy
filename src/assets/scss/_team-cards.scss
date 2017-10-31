@@ -4,7 +4,7 @@ $card-team-profile-text-color: $body-font-color;
 .card-team-profile {
   @include card-container($card-team-profile-bg, $card-team-profile-text-color, 1rem, $global-radius);
   border-bottom: .5em solid $periago-turqoise;
-  box-shadow: 0 5px 10px 0 rgba($black, .3);
+  // box-shadow: 0 5px 10px 0 rgba($black, .3);
   margin-bottom: 1.5em;
   position: relative;
   z-index: 0;
@@ -111,6 +111,7 @@ $card-team-profile-text-color: $body-font-color;
   border: .1em solid rgba($black, .5);
   margin-bottom: 1em;
   margin-top: 1em;
+  padding-top: 2em;
 
   h3 {
     color: $white;

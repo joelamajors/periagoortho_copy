@@ -17,10 +17,10 @@ $article-titles-font-size: 2em;
     max-width: 84%;
   }
 
-  @include breakpoint (large) {
-    @include xy-cell(8, true, 1.5em, margin, right left, false);
-    max-width: 66%;
-  }
+  // @include breakpoint (large) {
+  //   @include xy-cell(8, true, 1.5em, margin, right left, false);
+  //   max-width: 66%;
+  // }
 
   h4 {
     @include xy-cell(12, true, 0, margin, right left, false);
@@ -57,6 +57,10 @@ $article-titles-font-size: 2em;
   @include breakpoint (medium) {
     @include xy-cell(9, true, 1.5em, margin, right left, false);
     max-width: 75%;
+  }
+
+  h3 {
+    text-align: center;
   }
 
   h4 {
