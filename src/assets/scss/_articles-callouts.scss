@@ -30,6 +30,34 @@ $article-titles-font-size: 2em;
   }
 }
 
+.article-content-image {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(4, true, 1.5em, margin, right left, false);
+    max-width: 25%;
+  }
+}
+
+.article-content-partition {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(8, true, 1.5em, margin, right left, false);
+    max-width: 75%;
+  }
+}
+
 .article-headers {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
@@ -65,5 +93,3 @@ $article-titles-font-size: 2em;
     max-width: 100%;
   }
 }
-
-
