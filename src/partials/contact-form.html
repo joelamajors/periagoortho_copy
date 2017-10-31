@@ -1,59 +1,34 @@
-<div class="contact-us-container" id="contact">
-
-  <div class="contact-form-title">
-    <h3>Contact Us</h3>
-  </div>
-
-  <div class="glorygrid-x">
-    <div class="contact-calendar-phone">
-      <a href="http://www.meetme.so/glorykiddtech" target="_blank" rel="noopener">
-        <div class="glorygrid-x">
-          <div class="contact-calendar-phone-blurb">
-            <p>Schedule a<br>consultation</p>
-          </div>
-          <div class="contact-calendar-fa">
-            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="contact-calendar-phone">
-      <a href="tel:+1-502-709-9110" >
-        <div class="glorygrid-x">
-          <div class="contact-calendar-phone-blurb">
-            <p>Call us<br><div class="hide-for-small-only">+1 (502) 709-9110</div></p>
-          </div>
-          <div class="contact-phone-fa">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
-
-  <div class="contact-form-container ">
+<form action="process.php" class="contact-form-container" method="POST" >
+  <div class="grid-x-space">
     <div class="contact-form-title">
       <h3>
-        Drop us a line <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        Drop us a line 
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
       </h3>
     </div>
 
-    <form action="process.php" class="cell small-10 medium-8" method="POST" >
+    <div class="contact-form-cell">
       <label>Your Name</label>
       <input name="ContactName" type="text" placeholder="Enter Your Name" />
+      
+      <label>Patient's Name</label>
+      <input name="PatientName" type="text" placeholder="Patient's name (if different)" />
+      
       <label>Phone Number</label>
       <input name="ContactPhone" type="text" placeholder="Contact Number" />
+
       <label>Email Address</label>
       <input name="ContactEmail" type="text" placeholder="Contact Email" />
+    </div>
+
+    <div class="contact-form-cell">
       <label>How Can We Help?</label>
-      <textarea name="ContactMessage" rows="5" placeholder="Description of the Project"></textarea>
-      <div class="callout reviews">
+      <textarea name="ContactMessage" rows="6" placeholder="Enter description of patient's needs"></textarea>
+      
+      <div class="callout">
         <div class="g-recaptcha" id="html_element"></div>
         <p><br /><button type="submit" class="success button">Send Email</button></p>
       </div>
-    </form>
+    </div>
   </div>
-
-</div>
+</form>

@@ -1,0 +1,31 @@
+.contact-form-cell {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 1.5em, margin, right left, false);
+    max-width: 84%;
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(5, true, 1.5em, margin, right left, false);
+    max-width: 42%;
+  }
+}
+
+.contact-form-title {
+  @include xy-cell(12, true, 1em, margin, right left, false);
+  max-width: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: 2em;
+  }
+}
+
+.contact-form-container {
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
