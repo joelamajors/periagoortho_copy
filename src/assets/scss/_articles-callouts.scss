@@ -47,6 +47,8 @@ $article-titles-font-size: 2em;
 }
 
 .article-content-partition {
+  margin-bottom: 1.5em;
+
   @include breakpoint (small) {
     @include xy-cell(12, true, 1em, margin, right left, false);
     max-width: 100%;
