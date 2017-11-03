@@ -43,7 +43,7 @@ $periago-banner-hr-width: 13em;
   background-repeat: repeat-x;
   border-bottom: thick solid $periago-turqoise;
   border-top: .2em solid $periago-lime;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   @include breakpoint (small) {
     background-position: 50% 45%;
