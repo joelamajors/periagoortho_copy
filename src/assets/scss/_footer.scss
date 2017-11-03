@@ -7,5 +7,21 @@ footer {
   border-bottom: thick solid $periago-turqoise;
   border-top: medium solid $periago-lime;
   margin-top: 2em;
-  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.gk-link {
+  border-bottom: 1px solid $black;
+  color: $black;
+
+  &:hover {
+    border-bottom: 1px solid $glorykidd-blue;
+    color: $glorykidd-blue;
+  }
+}
+
+.footer-cells {
+  padding: .5em;
+  text-align: center;
 }
