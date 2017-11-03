@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Julius+Sans+One" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+<!-- Google Recaptcha -->
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6Lc3CDcUAAAAAGTAQS1ykZN7C1IPMd-GzFXn_-AO'
+        });
+      };
+    </script>
+
   </head>
+
   <body>
 
     {{> menu-index }}
