@@ -1,61 +1,52 @@
-.location-card-container {
-  @include xy-grid(horizontal, true);
-  justify-content: center;
-}
-
 .location-cards {
-  @include card-container($periago-orange, $white, 1em, 1px solid rgba($black, .3), 3px, 0 10px 20px rgba($dark-gray, .5));
-  @include xy-grid(horizontal, true);
-  justify-content: space-around;
-
-  @include breakpoint (small) {
-    @include xy-cell(12, true, 1em, margin, right left, false);
-    max-width: 100%;
-  }
-
-  @include breakpoint (medium) {
-    @include xy-cell(12, true, 5em, margin, right left, false);
-    max-width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
-
-.location-cards-offices,
-.location-card-title {
-  @include xy-cell(12, true, 1em, margin, right left, false);
-  text-align: center;
-  width: 100%;
+  @include card-container($periago-orange, $white, 3em, 1px solid rgba($black, .3), 3px, 0 10px 20px rgba($dark-gray, .5));
+  @include xy-grid();
 }
 
 .location-card-address {
-  @include breakpoint (small) {
-    @include xy-cell(12, true, 1em, margin, right left, false);
-    max-width: 100%;
-  }
+  @extend %small-cell-12;
 
-  @include breakpoint (medium) {
-    @include xy-cell(6, true, 1em, margin, right left, false);
-    max-width: 50%;
+  a {
+    color: $white;
   }
 }
 
 .location-card-hours {
+  @extend %small-cell-12;
+}
+
+.location-cards-offices {
+  text-align: center;
+}
+
+.location-card-title {
+  padding-left: .5em;
+
   @include breakpoint (small) {
-    @include xy-cell(12, true, 1em, margin, right left, false);
-    max-width: 100%;
+    text-align: center;
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(4, true, 1em, margin, right left, false);
-    max-width: 50%;
+    text-align: left;
+  }
+}
+
+.location-card-text {
+  @extend %small-cell-12;
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 1em, margin, right left, false);
   }
 }
 
 .location-card-map-section {
-  @extend .location-card-address;
 
-  h4 {
-    padding-left: .5em;
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 0, margin, right left, false);
+    min-height: 20em;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(6, true, 0, margin, right left, false);
   }
 }

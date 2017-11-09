@@ -1,27 +1,32 @@
+%grid-x-center,
 .grid-x-center {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
   justify-content: center;
 }
 
+%grid-x-left,
 .grid-x-left {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
   justify-content: flex-start;
 }
 
+%grid-x-right,
 .grid-x-right {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
   justify-content: flex-end;
 }
 
+%grid-x-space,
 .grid-x-space {
   @include xy-grid(horizontal, true);
   @include xy-gutters(.5em, margin, right left, false);
   justify-content: space-around;
 }
 
+%grid-y-center,
 .grid-y-center {
   @include xy-grid(vertical, true);
   justify-content: center;
@@ -29,4 +34,11 @@
 
 .periago-header {
   justify-content: center;
+}
+
+%small-cell-12 {
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
 }
