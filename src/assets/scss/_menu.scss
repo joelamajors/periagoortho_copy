@@ -185,6 +185,29 @@ $periago-banner-hr-width: 13em;
   @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
 }
 
+.agendar-una-cita {
+  @include button(true, rgba($periago-turqoise, .9), rgba($periago-turqoise, .8), $black, solid);
+  justify-content: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(11);
+    margin-top: 1em;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(5);
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(3);
+  }
+
+  a {
+    color: $white;
+    font-size: 1.5em;
+  }
+}
+
 .title-bar {
   background-color: $periago-orange;
 

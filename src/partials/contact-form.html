@@ -9,26 +9,29 @@
     </div>
 
     <div class="contact-form-cell">
-      <label>Your Name</label>
-      <input name="ContactName" type="text" placeholder="Enter Your Name" />
+      <label for="contact-name">Name / Nombre</label>
+      <input id="contact-name" name="ContactName" type="text" placeholder="Enter Your Name" />
       
-      <label>Patient's Name</label>
-      <input name="PatientName" type="text" placeholder="Patient's name (if different)" />
-      
-      <label>Phone Number</label>
-      <input name="ContactPhone" type="text" placeholder="Contact Number" />
+      <label for="contact-patient-name">Patient's Name / Nombre del Paciente</label>
+      <input id="contact-patient-name" name="PatientName" type="text" placeholder="Patient's name (if different)" />
 
-      <label>Email Address</label>
-      <input name="ContactEmail" type="text" placeholder="Contact Email" />
+      <label for="contact-patient-age">Patient's Age / Edad del Paciente</label>
+      <input id="contact-patient-age" name="PatientName" type="text" placeholder="Patient's name (if different)" />
+      
+      <label for="contact-phone">Phone / Teléfono</label>
+      <input id="contact-phone" name="ContactPhone" type="text" placeholder="Contact Number" />
+
+      <label for="contact-email">Email</label>
+      <input id="contact-email" name="ContactEmail" type="text" placeholder="Contact Email" />
     </div>
 
     <div class="contact-form-cell">
-      <label>How Can We Help?</label>
-      <textarea name="ContactMessage" rows="6" placeholder="Enter description of patient's needs"></textarea>
+      <label for="contact-reasons">Reason for Appointment / Razón por la Cita </label>
+      <textarea id="contact-reasons" name="ContactMessage" rows="6" placeholder="Enter description of patient's needs"></textarea>
       
       <div class="callout">
         <div class="g-recaptcha" id="html_element"></div>
-        <p><br /><button type="submit" class="success button">Send Email</button></p>
+        <p><br /><button type="submit" class="success button">Submit / Enviar</button></p>
       </div>
     </div>
 
