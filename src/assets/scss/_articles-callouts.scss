@@ -39,6 +39,11 @@ $article-titles-font-size: 2em;
     @include xy-cell(3, true, 1.5em, margin, right left, false);
     max-width: 25%;
   }
+
+  img {
+    box-shadow: 0 5px 10px 0 rgba($black, .3);
+    margin-bottom: .5em;
+  }
 }
 
 .article-content-partition {
