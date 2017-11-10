@@ -7,7 +7,7 @@ name: PHP Only Page
   //form submitted
   $from_user = $_POST['ContactName'];
   $from_patient = $_POST['PatientName'];
-  $from_patient = $_POST['PatientAge'];
+  $from_patient_age = $_POST['PatientAge'];
   $from_phone = $_POST['ContactPhone'];
   $from_email = $_POST['ContactEmail'];
   $from_message = $_POST['ContactMessage'];
@@ -23,6 +23,7 @@ name: PHP Only Page
     $txt = "<h3>You have a new contact email from PeriagoOrtho</h3>";
     $txt = $txt."<p>From User: ".$from_user."<br />";
     $txt = $txt."<p>Regarding Patient: ".$from_patient."<br />";
+    $txt = $txt."<p>Patient Age: ".$from_patient_age."<br />";
     $txt = $txt."User Phone: ".$from_phone."<br />";
     $txt = $txt."User Email: ".$from_email."<br />";
     $txt = $txt."User Message: ".$from_message."</p>";
