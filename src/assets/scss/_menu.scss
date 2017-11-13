@@ -2,6 +2,30 @@ $menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
 $periago-banner-hr-width: 13em;
 
+.agendar-una-cita {
+  @include button(true, rgba($periago-turqoise, .9), rgba($periago-turqoise, .8), $black, solid);
+  justify-content: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(11);
+    margin-top: 1em;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(5);
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(3);
+  }
+
+  a {
+    color: $white;
+    font-size: 1.5em;
+  }
+}
+
+%periago-banner,
 .periago-banner {
   @include xy-grid(vertical, true);
   justify-content: center;
@@ -20,7 +44,7 @@ $periago-banner-hr-width: 13em;
 }
 
 .periago-banner-index {
-  @extend .periago-banner;
+  @extend %periago-banner;
 
   max-height: 1000px;
 
@@ -130,7 +154,7 @@ $periago-banner-hr-width: 13em;
     background-color: transparent;
   }
 
-  a:before,
+  a::before,
   a::after {
     background-color: $periago-lime;
     content: '';
@@ -181,36 +205,14 @@ $periago-banner-hr-width: 13em;
   justify-content: center;
 
   a {
-    @include button(false, rgba($white, .5), $white, $black, solid);
-    font-weight: bold;
+    @include button(false, rgba($white, .7), $white, $black, solid);
+    font-size: 1.2em;
+    line-height: 1.1;
   }
 }
 
 .spanish-button {
   @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
-}
-
-.agendar-una-cita {
-  @include button(true, rgba($periago-turqoise, .9), rgba($periago-turqoise, .8), $black, solid);
-  justify-content: center;
-
-  @include breakpoint (small) {
-    @include xy-cell(11);
-    margin-top: 1em;
-  }
-
-  @include breakpoint (medium) {
-    @include xy-cell(5);
-  }
-
-  @include breakpoint (large) {
-    @include xy-cell(3);
-  }
-
-  a {
-    color: $white;
-    font-size: 1.5em;
-  }
 }
 
 .title-bar {
