@@ -1,6 +1,7 @@
 $menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
 $periago-banner-hr-width: 13em;
+$topbar-font-size: 1em;
 
 .agendar-una-cita {
   @include button(true, rgba($periago-turqoise, .9), rgba($periago-turqoise, .8), $black, solid);
@@ -22,6 +23,25 @@ $periago-banner-hr-width: 13em;
   a {
     color: $white;
     font-size: 1.5em;
+  }
+}
+
+.location-banner {
+  background-color: rgba($periago-pink, .5);
+  margin-bottom: 1em;
+}
+
+.location-cells {
+  @include xy-cell(4, true, 1em, padding, top bottom, null, false);
+
+  text-align: center;
+
+  a {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: rgba($periago-pink, .8);
   }
 }
 
@@ -211,10 +231,6 @@ $periago-banner-hr-width: 13em;
   }
 }
 
-.spanish-button {
-  @include button(false, rgba($periago-pink, .5), $periago-pink, $white, solid);
-}
-
 .title-bar {
   background-color: $periago-orange;
 
@@ -236,19 +252,19 @@ $periago-banner-hr-width: 13em;
 
   li {
     @include breakpoint (medium) {
-      font-size: 1em;
+      font-size: $topbar-font-size;
     }
 
     @include breakpoint (large) {
-      font-size: 1.2em;
+      font-size: $topbar-font-size + .2em;
     }
 
     @include breakpoint (xlarge) {
-      font-size: 1.3em;
+      font-size: $topbar-font-size + .3em;
     }
 
     @include breakpoint (xxlarge) {
-      font-size: 1.6em;
+      font-size: $topbar-font-size + .6em;
     }
   }
 
