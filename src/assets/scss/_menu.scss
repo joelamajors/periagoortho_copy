@@ -83,7 +83,7 @@ $topbar-font-size: 1em;
 
 .periago-bar {
   background-color: $periago-turqoise;
-  background-image: url('../../../../assets/img/periago-hero-bg-blur.png');
+  background-image: url('../../../../assets/img/periago-multi-banner.png');
   background-repeat: repeat-x;
   border-bottom: thick solid $periago-turqoise;
   border-top: .2em solid $periago-lime;
@@ -130,6 +130,8 @@ $topbar-font-size: 1em;
 
 .periago-logo {
   @include xy-cell(auto);
+  // background-color: rgba($black, .8);
+
   img {
     margin-bottom: 1em;
     margin-top: 2em;
@@ -210,6 +212,7 @@ $topbar-font-size: 1em;
 
 .periago-menu-banner {
   @extend %grid-x-center;
+  background-color: rgba($black, .8);
   margin-bottom: 2em;
 }
 
@@ -219,6 +222,10 @@ $topbar-font-size: 1em;
   color: $white;
   margin-bottom: .5em;
   text-align: center;
+
+  h4 {
+    padding-bottom: 1em;
+  }
 }
 
 .schedule-appointment {
