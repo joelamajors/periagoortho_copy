@@ -15,7 +15,7 @@
   }
 
   @include breakpoint (medium) {
-    @include xy-cell(6, true, 1.5em, margin, right left, false);
+    @include xy-cell(4, true, 1.5em, margin, right left, false);
     max-width: 50%;
   }
 
@@ -56,8 +56,8 @@
 }
 
 .resource-card-link {
-  background-color: $light-gray;
-  color: $periago-turqoise;
+  background-color: $periago-turqoise;
+  color: $white;
   padding: .5em 0;
 
   @include breakpoint (small) {
