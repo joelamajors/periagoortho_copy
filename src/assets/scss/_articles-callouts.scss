@@ -148,3 +148,14 @@ $article-titles-font-size: 2em;
     margin-top: 1em;
   }
 }
+
+.np-schedule-button {
+  @extend %grid-x-center;
+  background-color: rgba($periago-turqoise, .8);
+  padding-top: 1em;
+
+  @include breakpoint (medium) {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
