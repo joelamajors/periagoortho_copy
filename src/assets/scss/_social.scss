@@ -1,0 +1,34 @@
+.community-header {
+  @include xy-cell(12, true, 5em, margin, right left, false);
+  color: $black;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.community-grid {
+  @extend %grid-x-space;
+  margin-top: 1em;
+}
+
+.community-cells {
+  background-color: $periago-orange;
+  border-radius: 1em;
+  color: $white;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(3, true, 1em, margin, right left, false);
+  }
+
+  .fa-facebook,
+  .fa-instagram {
+    color: $white;
+  }
+}

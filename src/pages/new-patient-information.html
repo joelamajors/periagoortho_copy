@@ -2,26 +2,36 @@
   <div class="accordion" data-responsive-accordion-tabs="accordion medium-tabs" data-allow-all-closed="true">
   
     <div class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">What Sets Us Apart</a>
+      <div class="accordion-content" data-tab-content>
+        {{> what-sets-us-apart}}
+        <div class="np-schedule-button">
+          {{> schedule-appointment-button}}
+        </div>
+        {{> facebook-instagram-cells}}
+      </div>
+    </div>
+
+    <div class="accordion-item" data-accordion-item>
       <a href="#" class="accordion-title">Patient Forms</a>
       <div class="accordion-content" data-tab-content>
-        {{> patient-forms }}
+        {{> patient-forms}}
       </div>
     </div>
 
     <div class="accordion-item" data-accordion-item>
       <a href="#" class="accordion-title">Financial Information</a>
       <div class="accordion-content" data-tab-content>
-        {{> financial-information }}
+        {{> financial-information}}
       </div>
     </div>
 
     <div class="accordion-item" data-accordion-item>
       <a href="#" class="accordion-title">Office Visits</a>
       <div class="accordion-content" data-tab-content>
-        {{> office-visits }}
+        {{> office-visits}}
       </div>
     </div>
 
   </div>
 </div>
-
