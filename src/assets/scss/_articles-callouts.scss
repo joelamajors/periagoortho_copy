@@ -173,6 +173,19 @@ $article-titles-font-size: 2em;
   }
 }
 
+.index-periago-headshot {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba($black, .3);
+
+  @include breakpoint (small) {
+    max-width: 40%;
+  }
+
+  @include breakpoint (medium) {
+    max-width: 100%;
+  }
+}
+
 .outside-resources-links {
   @include xy-cell(12, true, 1em, margin, right left, false);
   max-width: 100%;
@@ -198,19 +211,6 @@ $article-titles-font-size: 2em;
   @include breakpoint (medium) {
     margin-left: 5em;
     margin-right: 5em;
-  }
-}
-
-.periago-index-headshot {
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba($black, .3);
-
-  @include breakpoint (small) {
-    max-width: 40%;
-  }
-
-  @include breakpoint (medium) {
-    max-width: 100%;
   }
 }
 
