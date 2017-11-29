@@ -118,6 +118,69 @@ $article-titles-font-size: 2em;
   }
 }
 
+.index-article-content-image {
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(5, true, 1.5em, margin, right left, false);
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(3, true, 1.5em, margin, right left, false);
+  }
+}
+
+.index-article-content-partition {
+  margin-bottom: 1.5em;
+
+  @include breakpoint (small) {
+    @include xy-cell(12, true, 1em, margin, right left, false);
+    max-width: 100%;
+  }
+
+  @include breakpoint (medium) {
+    @include xy-cell(7, true, 1.5em, margin, right left, false);
+    margin-top: 1em;
+    max-width: 58%;
+  }
+
+  @include breakpoint (large) {
+    @include xy-cell(9, true, 1.5em, margin, right left, false);
+    margin-top: 1em;
+    // max-width: 58%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    text-decoration: underline;
+  }
+}
+
+.index-periago-headshot {
+  border-radius: 50%;
+  box-shadow: 2px 7px 10px 0 rgba($black, .4);
+  margin-bottom: .5em;
+
+  @include breakpoint (small) {
+    max-width: 40%;
+  }
+
+  @include breakpoint (medium) {
+    max-width: 100%;
+  }
+}
+
 .outside-resources-links {
   @include xy-cell(12, true, 1em, margin, right left, false);
   max-width: 100%;
@@ -135,6 +198,16 @@ $article-titles-font-size: 2em;
   }
 }
 
+.np-schedule-button {
+  @extend %grid-x-center;
+  background-color: rgba($periago-turqoise, .8);
+  padding-top: 1em;
+
+  @include breakpoint (medium) {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
 
 .two-phase-image {
   background-color: $periago-orange;
@@ -146,16 +219,5 @@ $article-titles-font-size: 2em;
   p {
     color: $white;
     margin-top: 1em;
-  }
-}
-
-.np-schedule-button {
-  @extend %grid-x-center;
-  background-color: rgba($periago-turqoise, .8);
-  padding-top: 1em;
-
-  @include breakpoint (medium) {
-    margin-left: 5em;
-    margin-right: 5em;
   }
 }

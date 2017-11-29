@@ -4,7 +4,6 @@ $card-team-profile-text-color: $body-font-color;
 .card-team-profile {
   @include card-container($card-team-profile-bg, $card-team-profile-text-color, 1rem, $global-radius);
   border-bottom: .5em solid $periago-turqoise;
-  // box-shadow: 0 5px 10px 0 rgba($black, .3);
   margin-bottom: 1.5em;
   position: relative;
   z-index: 0;
@@ -25,6 +24,42 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
+.card-team-profile-actions {
+  @include card-divider;
+  background: $card-team-profile-bg;
+  display: flex;
+}
+
+.card-team-profile-avatar {
+  bottom: 100%;
+  left: 1rem;
+  max-width: rem-calc(90);
+  position: absolute;
+  z-index: 2;
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba($black, .3);
+  }
+}
+
+.card-team-profile-blank {
+  background-color: $periago-orange;
+  height: 7em;
+  max-width: 100%;
+  padding-top: 1em;
+  transition: all .25s ease;
+}
+
+.card-team-profile-button {
+  flex: 1 0 0;
+  margin-bottom: 0;
+
+  + .card-team-profile-button {
+    margin-left: 1rem;
+  }
+}
+
 .card-team-profile-content {
   position: relative;
 
@@ -42,12 +77,6 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
-.card-team-profile-actions {
-  @include card-divider;
-  background: $card-team-profile-bg;
-  display: flex;
-}
-
 .card-team-profile-img {
   background-color: $periago-orange;
   max-width: 100%;
@@ -55,25 +84,10 @@ $card-team-profile-text-color: $body-font-color;
   transition: all .25s ease;
 }
 
-.card-team-profile-blank {
-  background-color: $periago-orange;
-  height: 7em;
-  max-width: 100%;
-  padding-top: 1em;
-  transition: all .25s ease;
-}
-
-.card-team-profile-avatar {
-  bottom: 100%;
-  left: 1rem;
-  max-width: rem-calc(90);
-  position: absolute;
-  z-index: 2;
-
-  img {
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba($black, .3);
-  }
+.card-team-profile-info {
+  font-size: .875rem;
+  letter-spacing: 1px;
+  opacity: .8;
 }
 
 .card-team-profile-name {
@@ -87,23 +101,8 @@ $card-team-profile-text-color: $body-font-color;
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: .5em;
-  text-transform: uppercase;
   padding-left: 1em;
-}
-
-.card-team-profile-button {
-  flex: 1 0 0;
-  margin-bottom: 0;
-
-  + .card-team-profile-button {
-    margin-left: 1rem;
-  }
-}
-
-.card-team-profile-info {
-  font-size: .875rem;
-  letter-spacing: 1px;
-  opacity: .8;
+  text-transform: uppercase;
 }
 
 .team-callout {
