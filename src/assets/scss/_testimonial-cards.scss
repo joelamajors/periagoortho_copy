@@ -1,0 +1,85 @@
+.after-title {
+  @extend %card-team-profile-name;
+  border-bottom: .25em solid $periago-lime;
+}
+
+.before-title {
+  @extend %card-team-profile-name;
+  border-top: .25em solid $periago-lime;
+}
+
+.before-after-image {
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  &.left-side {
+    @include xy-cell(6, true, 0, margin, right left, false);
+    border-right: .2em solid $white;
+  }
+
+  &.right-side {
+    @include xy-cell(6, true, 0, margin, right left, false);
+    border-left: .2em solid $white;
+  }
+}
+
+%testimonial-profile,
+.testimonial-profile {
+  @extend %card-team-profile;
+  box-shadow: 4px 6px 10px rgba($black, .4);
+  padding: 1em;
+}
+
+.testimonial-profile-j {
+  @include xy-cell(12);
+
+  @include card-container($card-team-profile-bg, $card-team-profile-text-color, 1rem, $global-radius);
+  border-bottom: .5em solid $periago-turqoise;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  position: relative;
+  z-index: 0;
+}
+
+// .testimonial-profile-actions {
+//   @extend %card-team-profile-actions;
+// }
+
+// .testimonial-profile-avatar {
+//   @extend %card-team-profile-avatar;
+// }
+
+// .testimonial-profile-blank {
+//   @extend %card-team-profile-blank;
+// }
+
+// .testimonial-profile-button {
+//   @extend %card-team-profile-button;
+// }
+
+// .testimonial-profile-content {
+//   @extend %card-team-profile-content;
+// }
+
+.testimonial-profile-img {
+  @extend %card-team-profile-img;
+}
+
+.testimonial-profile-info {
+  @extend %card-team-profile-info;
+  border-top: .25em solid $periago-lime;
+  margin-bottom: 1em;
+}
+
+.testimonial-profile-name {
+  @extend %card-team-profile-name;
+  z-index: 2;
+}
+
+.testimonial-profile-status {
+  @extend %card-team-profile-status;
+}
+
+.testimonial-callout {
+  @extend %team-callout;
+}
