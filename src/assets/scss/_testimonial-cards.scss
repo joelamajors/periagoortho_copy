@@ -1,40 +1,53 @@
-.testimonial-team-profile {
+.testimonial-profile {
   @extend %card-team-profile;
+  padding: 1em;
 }
 
-.testimonial-team-profile-actions {
+.testimonial-profile-actions {
   @extend %card-team-profile-actions;
 }
 
-.testimonial-team-profile-avatar {
+.testimonial-profile-avatar {
   @extend %card-team-profile-avatar;
 }
 
-.testimonial-team-profile-blank {
+.testimonial-profile-blank {
   @extend %card-team-profile-blank;
 }
 
-.testimonial-team-profile-button {
+.testimonial-profile-button {
   @extend %card-team-profile-button;
 }
 
-.testimonial-team-profile-content {
+.testimonial-profile-content {
   @extend %card-team-profile-content;
 }
 
-.testimonial-team-profile-img {
+.testimonial-profile-img {
   @extend %card-team-profile-img;
 }
 
-.testimonial-team-profile-info {
+.testimonial-profile-info {
   @extend %card-team-profile-info;
+  border-top: .25em solid $periago-lime;
+  margin-bottom: 1em;
 }
 
-.testimonial-team-profile-name {
+.after-title {
   @extend %card-team-profile-name;
+  border-bottom: .25em solid $periago-lime;
+}
+.before-title {
+  @extend %card-team-profile-name;
+  border-top: .25em solid $periago-lime;
 }
 
-.testimonial-team-profile-status {
+.testimonial-profile-name {
+  @extend %card-team-profile-name;
+  z-index: 2;
+}
+
+.testimonial-profile-status {
   @extend %card-team-profile-status;
 }
 
