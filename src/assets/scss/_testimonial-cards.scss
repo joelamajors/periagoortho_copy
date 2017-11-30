@@ -1,0 +1,43 @@
+.testimonial-team-profile {
+  @extend %card-team-profile;
+}
+
+.testimonial-team-profile-actions {
+  @extend %card-team-profile-actions;
+}
+
+.testimonial-team-profile-avatar {
+  @extend %card-team-profile-avatar;
+}
+
+.testimonial-team-profile-blank {
+  @extend %card-team-profile-blank;
+}
+
+.testimonial-team-profile-button {
+  @extend %card-team-profile-button;
+}
+
+.testimonial-team-profile-content {
+  @extend %card-team-profile-content;
+}
+
+.testimonial-team-profile-img {
+  @extend %card-team-profile-img;
+}
+
+.testimonial-team-profile-info {
+  @extend %card-team-profile-info;
+}
+
+.testimonial-team-profile-name {
+  @extend %card-team-profile-name;
+}
+
+.testimonial-team-profile-status {
+  @extend %card-team-profile-status;
+}
+
+.testimonial-callout {
+  @extend %team-callout;
+}

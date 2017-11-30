@@ -1,6 +1,7 @@
 $card-team-profile-bg: $card-background;
 $card-team-profile-text-color: $body-font-color;
 
+%card-team-profile,
 .card-team-profile {
   @include card-container($card-team-profile-bg, $card-team-profile-text-color, 1rem, $global-radius);
   border-bottom: .5em solid $periago-turqoise;
@@ -24,12 +25,14 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
+%card-team-profile-actions,
 .card-team-profile-actions {
   @include card-divider;
   background: $card-team-profile-bg;
   display: flex;
 }
 
+%card-team-profile-avatar,
 .card-team-profile-avatar {
   bottom: 100%;
   left: 1rem;
@@ -43,6 +46,7 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
+%card-team-profile-blank,
 .card-team-profile-blank {
   background-color: $periago-orange;
   height: 7em;
@@ -51,6 +55,7 @@ $card-team-profile-text-color: $body-font-color;
   transition: all .25s ease;
 }
 
+%card-team-profile-button,
 .card-team-profile-button {
   flex: 1 0 0;
   margin-bottom: 0;
@@ -60,6 +65,7 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
+%card-team-profile-content,
 .card-team-profile-content {
   position: relative;
 
@@ -77,6 +83,7 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
+%card-team-profile-img,
 .card-team-profile-img {
   background-color: $periago-orange;
   max-width: 100%;
@@ -84,18 +91,21 @@ $card-team-profile-text-color: $body-font-color;
   transition: all .25s ease;
 }
 
+%card-team-profile-info,
 .card-team-profile-info {
   font-size: .875rem;
   letter-spacing: 1px;
   opacity: .8;
 }
 
+%card-team-profile-name,
 .card-team-profile-name {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0;
 }
 
+%card-team-profile-status,
 .card-team-profile-status {
   border-bottom: .25em solid $periago-lime;
   font-size: 1rem;
@@ -105,6 +115,7 @@ $card-team-profile-text-color: $body-font-color;
   text-transform: uppercase;
 }
 
+%team-callout,
 .team-callout {
   background-color: $periago-orange;
   border: .1em solid rgba($black, .5);
