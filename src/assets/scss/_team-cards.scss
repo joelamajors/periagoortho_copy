@@ -19,7 +19,7 @@ $card-team-profile-text-color: $body-font-color;
   }
 
   @include breakpoint (large) {
-    @include xy-cell(4, true, 1.5em, margin, right left, false);
+    @include xy-cell(3, true, 1.5em, margin, right left, false);
     max-width: 33.3%;
   }
 }
