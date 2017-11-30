@@ -1,5 +1,21 @@
+.after-title {
+  @extend %card-team-profile-name;
+  border-bottom: .25em solid $periago-lime;
+}
+
+.before-title {
+  @extend %card-team-profile-name;
+  border-top: .25em solid $periago-lime;
+}
+
+.before-after-image {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
 .testimonial-profile {
   @extend %card-team-profile;
+  box-shadow: 4px 6px 10px rgba($black, .4);
   padding: 1em;
 }
 
@@ -31,15 +47,6 @@
   @extend %card-team-profile-info;
   border-top: .25em solid $periago-lime;
   margin-bottom: 1em;
-}
-
-.after-title {
-  @extend %card-team-profile-name;
-  border-bottom: .25em solid $periago-lime;
-}
-.before-title {
-  @extend %card-team-profile-name;
-  border-top: .25em solid $periago-lime;
 }
 
 .testimonial-profile-name {
