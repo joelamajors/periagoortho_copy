@@ -1,3 +1,6 @@
+# Periago Orthodontics
+This site was built for [Periago Orthodontics](www.periagoortho.com) using the ZURB Foundations framework.
+
 # ZURB Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
